@@ -1,4 +1,4 @@
-package com.example.sergiorodriguez.appprueba;
+package com.example.sergiorodriguez.ejercicio;
 
 import org.junit.Test;
 

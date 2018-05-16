@@ -1,4 +1,4 @@
-package com.example.sergiorodriguez.appprueba;
+package com.example.sergiorodriguez.ejercicio;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
@@ -10,7 +10,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class UsuarioSQLiteHelper extends SQLiteOpenHelper {
 
     // Creamos una variable que contendrá la sentencia SQL de creación de la tabla
-    String sql = "CREATE TABLE Cliente (Identificacion INTEGER, Nombres TEXT, Apellidos TEXT)";
+    String sql = "CREATE TABLE Cliente (Identificacion INTEGER, Nombres TEXT, Apellidos TEXT, Telefono TEXT, Direccion TEXT, Correo TEXT)";
 
     public UsuarioSQLiteHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);

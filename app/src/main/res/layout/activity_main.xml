@@ -7,23 +7,131 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editIdentificacion"
+        android:id="@+id/editId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:layout_marginEnd="11dp"
-        android:layout_marginTop="23dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="51dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:inputType="textPersonName|number"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp" />
 
     <TextView
-        android:id="@+id/lblIdentificacion"
+        android:id="@+id/lblId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/editIdentificacion"
+        android:layout_alignBaseline="@+id/editId"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="32dp"
-        android:text="Identificación" />
+        android:layout_marginStart="27dp"
+        android:text="Identifacion"
+        android:textSize="18sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="27dp" />
+
+    <EditText
+        android:id="@+id/editNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblNombre"
+        android:layout_alignStart="@+id/editId"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignLeft="@+id/editId" />
+
+    <TextView
+        android:id="@+id/lblNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/lblId"
+        android:layout_marginTop="115dp"
+        android:text="Nombres"
+        android:textSize="18sp"
+        android:layout_alignLeft="@+id/lblId" />
+
+    <EditText
+        android:id="@+id/editApellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblApellido"
+        android:layout_alignStart="@+id/editId"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignLeft="@+id/editId" />
+
+    <TextView
+        android:id="@+id/lblApellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/lblId"
+        android:layout_marginTop="184dp"
+        android:text="Apellidos"
+        android:textSize="18sp"
+        android:layout_alignLeft="@+id/lblId" />
+
+    <EditText
+        android:id="@+id/editTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editId"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignLeft="@+id/editId" />
+
+    <TextView
+        android:id="@+id/lblTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/lblApellido"
+        android:layout_centerVertical="true"
+        android:text="Telefono"
+        android:textSize="18sp"
+        android:layout_alignRight="@+id/lblApellido" />
+
+    <EditText
+        android:id="@+id/editDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblDireccion"
+        android:layout_alignStart="@+id/editId"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignLeft="@+id/editId" />
+
+    <TextView
+        android:id="@+id/lblDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/lblTelefono"
+        android:layout_marginBottom="188dp"
+        android:text="Direccion"
+        android:textSize="18sp"
+        android:layout_alignLeft="@+id/lblTelefono" />
+
+    <EditText
+        android:id="@+id/editCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblCorreo"
+        android:layout_alignStart="@+id/editId"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignLeft="@+id/editId" />
+
+    <TextView
+        android:id="@+id/lblCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/lblId"
+        android:layout_marginBottom="128dp"
+        android:text="Correo"
+        android:textSize="18sp"
+        android:layout_alignLeft="@+id/lblId" />
 </RelativeLayout>
